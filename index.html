@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Invoice Notification</title>
+    <!-- <script>
+        function formatDate(date) {
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let day = date.getDate();
+            let month = months[date.getMonth()];
+            let year = date.getFullYear();
+            return ${day} ${month}, ${year};
+        }
+
+        function updateDate() {
+            let currentDate = new Date();
+            let formattedDate = formatDate(currentDate);
+            document.getElementById("purchaseDate").innerText = formattedDate;
+        }
+
+        window.onload = updateDate;
+    </script> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .email-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .email-header {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #0070ba;
+        }
+
+        .email-body {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .invoice-details {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .invoice-details p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .contact-info a {
+            color: #0070ba;
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container">
+        <img src="https://www.cdnlogo.com/logos/p/41/paypal.svg" alt="PayPal logo"
+        style="max-width: 200px; width: 100%; height: auto;">
+        <div class="email-header">
+            PayPal Invoice Notification
+        </div>
+
+        <div class="email-body">
+            <p>Dear Customer,</p>
+            <p>Thank you for using PayPal!</p>
+            <p>This is to inform you that your account has been charged <strong>USD 479.35</strong>. The amount will be
+                deducted from your account within 24 hours.</p>
+
+            <div class="invoice-details">
+                <p><strong>Invoice Details :</strong></p>
+                <p><strong>Invoice Number &nbsp;&nbsp;&nbsp;:</strong> 44GQ FQ89 Z7HY CDC9</p>
+                <p><strong>Invoice Amount &nbsp;&nbsp;&nbsp;:</strong> USD 479.35</p>
+                <p><strong>Invoice Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong> <span>22 March 2025</span> </p>
+                <p><strong>Payment Mode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</strong> Online</p>
+            </div>
+
+            <div class="contact-info">
+                <p>If you did not recognize this transaction or wish to cancel the charges, please contact our
+                    <strong>Toll-Free Customer Support</strong> at <a href="tel:+1-808-229-6305">+1-808-229-6305</a>.</p>
+                <p><strong>Please note:</strong> This charge is associated with an auto-renewal service.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Thank you for your attention.<br>Best regards,<br>PayPal Team</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
